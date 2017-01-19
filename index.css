@@ -1,0 +1,258 @@
+@charset "utf-8";
+body,p,div,ul{
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 768px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  .zuopin li {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (max-width: 768px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  .zuopin li img{
+    width: 80%;
+  }
+}
+@media screen and (min-width: 769px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  .zuopin li {
+    max-width: 250px;
+    float: left;
+  }
+}
+@media screen and (min-width: 769px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  .zuopin li img{
+    width: 80%;
+  }
+}
+body{font-family:"Microsoft YaHei";}
+#content_box{max-width: 1200px;margin: 0 auto;}
+.content{
+	width: 100%;
+	height: 180px;
+	background: url("bg.jpg");
+}
+.content .top{
+	width: 100%;
+	padding-top: 30px;
+	margin: auto;
+}
+.content .top .l1{
+	margin: 20px 0;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+.content .top .l2{
+	margin: 20px 0;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+.touxiang{
+	width: 100%;
+	height: 100px;
+}
+.touxiang img{
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin: 0 auto;
+}
+.jieshao{
+	width: 100%;
+	margin-top: 70px;
+}
+.jieshao ul{
+	margin:0 10px;
+	overflow: hidden;
+}
+.jieshao li{
+	width: 50%;
+	float: left;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	position: relative;
+}
+.jieshao li img{
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+}
+.jieshao li span{
+	display: block;
+	margin-left: 40px;
+}
+.jineng{margin: 20px 10px;}
+.jineng .title{position: relative;padding: 8px 0;border-bottom: 1px solid #ccc;}
+.jineng .shuxian{
+	position: absolute;
+	display: inline-block;
+	content: "";
+	width: 5px;
+	height: 25px;
+	background: blue;
+}
+.jineng .zi{padding-left: 20px;line-height: 26px;font-size: 18px;font-weight: bold;}
+#tutu .tutu_content{
+	padding: 5px 10px 0;
+}
+#skill{padding: 20px 0;position: relative;}
+#skill li {
+    margin-bottom: 50px;
+    background: #000;
+    height: 20px;
+    border-radius: 3px;
+    list-style-type: none;
+}
+#skill li:last-child{
+	margin-bottom: 0!important;
+}
+.expand {
+    height: 20px;
+    margin: 0;
+    background: #2187e7;
+    position: absolute;
+}
+#skill li em {
+    position: relative;
+    top: -30px;
+}
+.html5 {
+    width: 70%;
+    -moz-animation: html5 2s ease-out;
+    -webkit-animation: html5 2s ease-out;
+}
+.css3 {
+    width: 90%;
+    -moz-animation: css3 2s ease-out;
+    -webkit-animation: css3 2s ease-out;
+}
+.jquery {
+    width: 60%;
+    -moz-animation: jquery 2s ease-out;
+    -webkit-animation: jquery 2s ease-out;
+}
+@-moz-keyframes html5       { 0%   { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes css3        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:50%;}  }
+@-moz-keyframes photoshop   { 0%  { width:0px;} 100%{ width:10%;}  }
+@-moz-keyframes dreamweaver { 0%  { width:0px;} 100%{ width:100%;} }
+
+@-webkit-keyframes html5       { 0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes css3        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:50%;}  }
+@-webkit-keyframes photoshop   { 0%  { width:0px;} 100%{ width:10%;}  }
+@-webkit-keyframes dreamweaver { 0%  { width:0px;} 100%{ width:100%;} }
+/* #tutu .tutu_content ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#tutu .tutu_content ul li{
+	margin: 10px 0;
+	height: 30px;
+	line-height: 20px;
+	overflow: hidden;
+}
+#tutu .tutu_content ul li span{
+	width: 25%;
+	margin-right: 4%;
+	float: left;
+	text-align: right;
+}
+#tutu .tutu_content ul li div{
+	width: 70%;
+	height: 20px;
+	float: left;
+	background-color: #f3f3f3;
+	overflow: hidden;
+}
+#tutu .tutu_content ul li div span{
+	display: block;
+	float: left;
+	height: 20px;
+}
+#tutu .tutu_content ul .js div span{
+	width: 70%;
+	background-color: #411417;
+}
+#tutu .tutu_content ul .ht div span{
+	width: 80%;
+	background-color: #2871d1;
+}
+#tutu .tutu_content ul .css div span{
+	width: 90%;
+	background-color: #459338;
+} */
+.yinxiang{width: 100%;}
+.yinxiang ul{overflow: hidden;margin: 0 10px;}
+.yinxiang li{float: left;list-style: none;margin:10px 0;}
+.yinxiang li span{margin:0 10px;padding:0 10px;display: block;text-align: center;border-radius: 5px;height: 30px;line-height: 30px;color: #fff;font-size: 14px;}
+.yinxiang li .n1{background:#c52f39; }
+.yinxiang li .n2{background:#5c8781 }
+.yinxiang li .n3{background:#54ac28; }
+.yinxiang li .n4{background:#ac28a1; }
+.jingli{
+	/* background-color: green; */
+	/* width: 80%; */
+	margin: auto;
+	/* height: 100px; */
+	width: 100%;
+}
+.jingli >p{
+	margin: 0;
+	border-bottom: 1px solid #e1e1e1;
+	padding-left: 20px;
+	height: 30px;
+	line-height: 30px;
+	background: url("../img/demoIcon01.png")no-repeat left center;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+	color: #0056b2;
+	font-weight: bold;
+}
+.jingli .box_content{
+	padding: 5px 10px 15px;
+}
+.jingli .content ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.jingli .box_content ul li{
+	margin: 15px 0;
+}
+.jingli .box_content ul li p{
+	overflow: hidden;
+}
+.jingli .box_content ul li p img{
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #e1e1e1;
+	border-radius: 1000px;
+	background-color: red;
+	margin-right: 20px;
+}
+.jingli .box_content ul li p span{
+	display: block;
+	margin: 10px 0;
+}
+.jingli .box_content ul li div{
+	margin-left: 70px;
+	margin-top: 10px;
+}
+.zuopin{width: 100%;}
+.zuopin ul{margin: 0 10px;overflow: hidden;}
+.zuopin ul li{list-style: none;float: left;}
+.zuopin ul li img{margin: 10px auto;display: block;}
+.zuopin ul li p{text-align: center;margin: 10px 0;line-height: 30px;font-size: 14px;}
+.zuopin a{text-decoration: none;}
